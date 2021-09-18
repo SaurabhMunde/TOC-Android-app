@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Theory of Computation and Automata"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TopicThreeVideoMat"
+            android:label="Video"
+            android:parentActivityName=".TopicThree"/>
+        <activity
+            android:name=".TopicThreeQuizmat"
+            android:label="Quiz"
+            android:parentActivityName=".TopicThree" />
+        <activity
+            android:name=".TopicThreePartFour"
+            android:label="Properties and applications"
+            android:parentActivityName=".TopicThreeStudyMat" />
+        <activity
+            android:name=".TopicThreePartThree"
+            android:label="FA TO RE"
+            android:parentActivityName=".TopicThreeStudyMat" />
+        <activity
+            android:name=".TopicThreePartTwo"
+            android:label="RE TO FA"
+            android:parentActivityName=".TopicThreeStudyMat" />
+        <activity
+            android:name=".TopicThreePartOne"
+            android:label="Introduction"
+            android:parentActivityName=".TopicThreeStudyMat" />
+        <activity
+            android:name=".TopicThreeStudyMat"
+            android:label="Study Material"
+            android:parentActivityName=".TopicThree" />
+        <activity
+            android:name=".TopicThree"
+            android:label="Regular Expression"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TopicTwoPartFour"
+            android:label="Application of FA"
+            android:parentActivityName=".TopicTwoStudyMat" />
+        <activity
+            android:name=".TopicTwoPartThree"
+            android:label="MEALY MOORE"
+            android:parentActivityName=".TopicTwoStudyMat" />
+        <activity
+            android:name=".TopicTwoPartTwo"
+            android:label="DFA AND NFA"
+            android:parentActivityName=".TopicTwoStudyMat" />
+        <activity
+            android:name=".TopicTwoPartOne"
+            android:label="INTRODUCTION of FA"
+            android:parentActivityName=".TopicTwoStudyMat" />
+        <activity
+            android:name=".TopicTwoVideoMat"
+            android:label="Video"
+            android:parentActivityName=".TopicTwo" />
+        <activity
+            android:name=".TopicTwoQuizmat"
+            android:label="Quiz"
+            android:parentActivityName=".TopicTwo" />
+        <activity
+            android:name=".TopicTwoStudyMat"
+            android:label="Study Material"
+            android:parentActivityName=".TopicTwo" />
+        <activity
+            android:name=".TopicTwo"
+            android:label="Finite Automata"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TopicOneVideoMat"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:label="Video"
+            android:parentActivityName=".TopicOne" />
+        <activity
+            android:name=".TopicOneQuizmat"
+            android:label="Quiz"
+            android:parentActivityName=".TopicOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TopicOneStudyMat"
+            android:label="Study Material"
+            android:parentActivityName=".TopicOne" />
+        <activity
+            android:name=".TopicOne"
+            android:label="Introduction"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutPage"
+            android:label="About us!"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="TOC and Automata"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

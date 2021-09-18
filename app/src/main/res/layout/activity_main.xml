@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    >
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D7C3C3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/introduction"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_middle_button"
+            android:text="Introduction"
+            android:onClick="Introduction" />
+
+        <Button
+            android:id="@+id/finiteautomata"
+            android:text="finite automata"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp"
+            android:onClick="FiniteAutomata"/>
+
+        <Button
+            android:id="@+id/RegularExpression"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp"
+            android:text="Regular Expression"
+            android:onClick="RegularExpression"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_middle_button"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="56dp">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#663636"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_layout"
+        app:menu="@menu/drawer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

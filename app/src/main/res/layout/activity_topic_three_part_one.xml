@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicThreePartOne">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lec3p1slide1"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/pic" />
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lec3p1slide2"
+            android:contentDescription="@string/pic"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lec3p1slide3"
+            android:contentDescription="@string/pic"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lec3p1slide4"
+            android:contentDescription="@string/pic"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
